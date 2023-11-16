@@ -3,6 +3,7 @@
     <types>
         <members>DiscountCalculator</members>
         <members>DiscountRuleTest</members>
+        <members>TriggerHandler</members>
         <name>ApexClass</name>
     </types>
     <types>

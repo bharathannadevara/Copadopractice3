@@ -12,7 +12,8 @@ public class DiscountRuleTest
             StageName = 'Closed Won');
         insert oppo;
         
-        System.runAs(new user(Id = UserInfo.getUserId())) {
+        System.runAs(new user(Id = UserInfo.getUserId())) 
+        {
         DiscountCalculator.calculateDiscount(oppo.Product_Category__c, oppo.Customer_Segment__c);
             // now we can refer to the test user in your test
             //System.debug('Current user: ' + UserInfo.getUserId());
