@@ -1,11 +1,11 @@
 /**
-* @description Utility class for calculating discounts based on Product Category and Customer Segment
+* @description Utility class for calculating discounts based on Product Category and Customer Segment.
 */
 public without sharing class DiscountCalculator {
     /**
-    * @description Calculates bulk discounts based on unique Product Categories and Customer Segments
-    * @param productCategories Set of unique Product Categories.
-    * @param customerSegments Set of unique Customer Segments.
+    * @description Calculates bulk discounts based on unique Product Categories and Customer Segments.
+    * @param productCategory Set of unique Product Categories.
+    * @param customerSegment Set of unique Customer Segments.
     * @return Map containing discounts keyed by concatenation of Product Category and Customer Segment.
     */
     public static Decimal calculateDiscount(String productCategory, String customerSegment) {

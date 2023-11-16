@@ -1,5 +1,12 @@
+/**
+ * @description Hello World
+ */
 public class TriggerHandler 
 {
+    /**
+     * @description Bar
+     * @return Bar
+     */
     public static void triggerDiscount(List<Opportunity> newOpportunities) 
     {
         for(Opportunity oppo : newOpportunities)
