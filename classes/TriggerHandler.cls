@@ -5,8 +5,7 @@ public class TriggerHandler
 {
     /**
      * @description triggerDiscount
-     * @param opportunity list to pass discount paramaters
-     * @return triggerDiscount
+     * @param newOpportunities list to pass discount parameters
      */
     public static void triggerDiscount(List<Opportunity> newOpportunities) 
     {
