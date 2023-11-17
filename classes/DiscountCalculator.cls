@@ -12,15 +12,24 @@ public without sharing class DiscountCalculator {
         Decimal discountPercentage = 0;
         
         List<Discount_Rules__mdt> rules;
-		if (!Schema.sObjectType.Discount_Rules__mdt.isAccessible()) 
+		// Check if the Discount_Rules__mdt object is accessible
+		Schema.DescribeSObjectResult objectDescribe = Schema.SObjectType.Discount_Rules__mdt;
+		if (objectDescribe.isAccessible()) 
         {
-          // Query custom metadata to get discount rules based on criteria
-          rules = [SELECT Discount_Percentage__c FROM Discount_Rules__mdt 
-                                           WHERE Product_Category__c = :productCategory 
-                                           AND Customer_Segment__c = :customerSegment];
-        }
-        
-        Applicable_Discount__c product = Applicable_Discount__c.getValues('Smartphone'); // not used
+    		// Query custom metadata to get discount rules based on criteria
+    		rules = [SELECT Discount_Percentage__c FROM Discount_Rules__mdt 
+             					WHERE Product_Category__c = :productCategory 
+             					AND Customer_Segment__c = :customerSegment];
+		} 
+        else 
+        {
+    		// Handle the case where the object is not accessible
+    		// This could involve logging an error, providing a default value, or other appropriate actions
+    		System.debug('Discount_Rules__mdt is not accessible.');
+		}
+    
+        Applicable_Discount__c product;
+        product = Applicable_Discount__c.getValues('Smartphone'); // not used
 
 		if (rules != null) 
         {
