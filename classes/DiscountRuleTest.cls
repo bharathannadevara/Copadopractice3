@@ -15,7 +15,7 @@ public class DiscountRuleTest
         System.runAs(new user(Id = UserInfo.getUserId())) 
         {
         DiscountCalculator.calculateDiscount(oppo.Product_Category__c, oppo.Customer_Segment__c);
-            // now we can refer to the test user in your test
+            // now we can refer to the test user in our test
             //System.debug('Current user: ' + UserInfo.getUserId());
         }
 

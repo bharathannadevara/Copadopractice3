@@ -1,11 +1,11 @@
 /**
- * @description Hello World
+ * @description TriggerHandler
  */
 public class TriggerHandler 
 {
     /**
-     * @description Bar
-     * @return Bar
+     * @description triggerDiscount
+     * @return triggerDiscount
      */
     public static void triggerDiscount(List<Opportunity> newOpportunities) 
     {

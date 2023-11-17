@@ -6,7 +6,7 @@ public without sharing class DiscountCalculator {
     * @description Calculates bulk discounts based on unique Product Categories and Customer Segments.
     * @param productCategory Set of unique Product Categories.
     * @param customerSegment Set of unique Customer Segments.
-    * @return Map containing discounts keyed by concatenation of Product Category and Customer Segment.
+    * @return calculateDiscount
     */
     public static Decimal calculateDiscount(String productCategory, String customerSegment) {
         Decimal discountPercentage = 0;
