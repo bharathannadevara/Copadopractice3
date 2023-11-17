@@ -21,12 +21,12 @@ public without sharing class DiscountCalculator {
              					WHERE Product_Category__c = :productCategory 
              					AND Customer_Segment__c = :customerSegment];
 		} 
-        else 
+        /*else 
         {
     		// Handle the case where the object is not accessible
     		// This could involve logging an error, providing a default value, or other appropriate actions
     		System.debug('Discount_Rules__mdt is not accessible.');
-		}
+		}*/
     
         Applicable_Discount__c product;
         product = Applicable_Discount__c.getValues('Smartphone'); // not used
