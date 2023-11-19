@@ -2,7 +2,7 @@
 public class DiscountRuleTest 
 {	
     @isTest
-    public static void testApplyDiscount() 
+    public static void testMetadataType() 
     {
         Opportunity oppo = new Opportunity(
             Name = 'Super sale',
@@ -28,3 +28,26 @@ public class DiscountRuleTest
 
     }
 }
+    /*@isTest
+    static void testCustomSetting() 
+    {
+        // Set up test data - create a mock Applicable_Discount__c custom setting
+        Applicable_Discount__c testProduct = new Applicable_Discount__c(
+            Name = 'Smartphone',
+            Product_Category__c = 'Electronics',
+            Customer_Segment__c = 'Nokia'
+            //CloseDate = Date.today(),
+            //StageName = 'Closed Won');
+            //Discount_Percentage__c = 15 // Set the desired discount percentage for testing
+        );
+        insert testProduct;
+
+        // Call the DiscountCalculator method with the mock product
+        //Decimal discount = DiscountCalculator.calculateDiscount(Applicable_Discount__c product);
+        List<Opportunity> discount = [SELECT Id, Discount_Percentage__c FROM Opportunity WHERE Id = :testProduct.Id ];
+	
+        Decimal expectedDiscount = 15;
+        // Assert that the discount is calculated correctly
+        System.assertEquals(expectedDiscount, discount[0].Discount_Percentage__c, 'Discount calculation should match the test product percentage');
+    }
+}*/
