@@ -6209,7 +6209,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.AnnualRevenue</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6219,17 +6219,17 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.Car_Brand__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.Car_Model__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.Country__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6244,7 +6244,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.Industry</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6254,7 +6254,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.NumberOfEmployees</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6269,14 +6269,14 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.Phone</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Rating</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -6299,7 +6299,7 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.State__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6309,7 +6309,7 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Account.Type</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -14965,13 +14965,13 @@
     </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account car layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account car layout</layout>
         <recordType>Account.Account_car_RT</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Account car layout</layout>
+        <layout>Account-Formato de cuentas</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Formato de cuentas</layout>
         <recordType>Account.Formato_de_cuentas</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -16985,13 +16985,12 @@
         <enabled>true</enabled>
     </pageAccesses>
     <recordTypeVisibilities>
-        <default>true</default>
-        <personAccountDefault>true</personAccountDefault>
+        <default>false</default>
         <recordType>Account.Account_car_RT</recordType>
-        <visible>true</visible>
+        <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
         <recordType>Account.Formato_de_cuentas</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
@@ -18259,7 +18258,7 @@
         <name>IsotopeCToCUser</name>
     </userPermissions>
     <userPermissions>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
         <name>IsotopeLEX</name>
     </userPermissions>
     <userPermissions>
