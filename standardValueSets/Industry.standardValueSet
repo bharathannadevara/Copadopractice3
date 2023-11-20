@@ -161,4 +161,9 @@
         <default>false</default>
         <label>Servicios públicos</label>
     </standardValue>
+    <standardValue>
+        <fullName>Automobile</fullName>
+        <default>false</default>
+        <label>Automobile</label>
+    </standardValue>
 </StandardValueSet>
