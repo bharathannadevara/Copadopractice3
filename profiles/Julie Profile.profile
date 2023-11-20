@@ -18093,7 +18093,7 @@
         <name>IsotopeCToCUser</name>
     </userPermissions>
     <userPermissions>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
         <name>IsotopeLEX</name>
     </userPermissions>
     <userPermissions>
