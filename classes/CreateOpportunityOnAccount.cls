@@ -31,9 +31,9 @@ public without sharing class CreateOpportunityOnAccount {
         }
 
         // Insert the new Opportunities
-        if (Schema.sObjectType.Opportunity.isAccessible()) {
+        
             if (!opportunitiesToInsert.isEmpty()) {
-               
+               if (Schema.sObjectType.Opportunity.isCreateable()) {
                 insert opportunitiesToInsert;
             }
             
