@@ -8,6 +8,8 @@
     <types>
         <members>Account.Car_Brand__c</members>
         <members>Account.Car_Model__c</members>
+        <members>Account.Country__c</members>
+        <members>Account.State__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -15,7 +17,6 @@
         <name>Layout</name>
     </types>
     <types>
-        <members>Julie Profile</members>
         <members>Standard</members>
         <name>Profile</name>
     </types>
