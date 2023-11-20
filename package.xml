@@ -1,43 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>DiscountCalculator</members>
-        <members>DiscountRuleTest</members>
-        <members>TriggerHandler</members>
+        <members>CreateOpportunityOnAccount</members>
+        <members>CreateOpportunityOnAccountTest</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>DiscountTrigger</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>Applicable_Discount__c.Customer_Segment__c</members>
-        <members>Applicable_Discount__c.Discount_Percentage__c</members>
-        <members>Applicable_Discount__c.Product_Category__c</members>
-        <members>Discount_Rules__mdt.Customer_Segment__c</members>
-        <members>Discount_Rules__mdt.Discount_Percentage__c</members>
-        <members>Discount_Rules__mdt.Product_Category__c</members>
-        <members>Discount_Rules__mdt.Product_Validity__c</members>
-        <members>Discount_Rules__mdt.Rule_Name__c</members>
-        <members>Opportunity.Customer_Segment__c</members>
-        <members>Opportunity.Discount_Percentage__c</members>
-        <members>Opportunity.Product_Category__c</members>
+        <members>Account.Car_Brand__c</members>
+        <members>Account.Car_Model__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Accessories_label</members>
-        <members>Headset_label</members>
-        <name>CustomLabel</name>
-    </types>
-    <types>
-        <members>Applicable_Discount__c</members>
-        <members>Discount_Rules__mdt</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Discount_Rules__mdt-Discount Rules Layout</members>
-        <members>Opportunity-Formato de oportunidades</members>
+        <members>Account-Account car layout</members>
         <name>Layout</name>
+    </types>
+    <types>
+        <members>Julie Profile</members>
+        <members>Standard</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Account.Account_car_RT</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>Industry</members>
+        <members>Industry</members>
+        <name>StandardValueSet</name>
     </types>
     <version>59.0</version>
 </Package>
