@@ -10,8 +10,10 @@ public without sharing class AccountUpdater {
      */
     public static void updateIndustry(String accountId, String newIndustry) {
         // Retrieve the Account record
-        Account accToUpdate = [SELECT Id, Industry FROM Account WHERE Id = :accountId LIMIT 1];
-
+       Account accToUpdate = new Account();
+        if(Schema.sObjectType.Account.isAccessible()){
+        accToUpdate = [SELECT Id, Industry FROM Account WHERE Id = :accountId LIMIT 1];
+        }
         if(Schema.sObjectType.Account.fields.Industry.isUpdateable()) {
         // Update the Industry field
         accToUpdate.Industry = newIndustry;
