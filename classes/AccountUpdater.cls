@@ -12,12 +12,13 @@ public without sharing class AccountUpdater {
         // Retrieve the Account record
         Account accToUpdate = [SELECT Id, Industry FROM Account WHERE Id = :accountId LIMIT 1];
 
+        if(Schema.sObjectType.Account.fields.Industry.isUpdateable()) {
         // Update the Industry field
         accToUpdate.Industry = newIndustry;
-
-        if(Schema.sObjectType.Account.isUpdateable()) {
+        }
+        if(Schema.sObjectType.Account.isUpdateable()){
         // Save the updated record
         update accToUpdate;
         }
+        }
     }
-}
