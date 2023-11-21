@@ -1,7 +1,7 @@
 /**
  * @description The CampaignCreator class provides a method to create a new Campaign record.
  */
-public class CampaignCreator {
+public without sharing class CampaignCreator {
     /**
      * @description Creates a new Campaign with the specified details.
      *

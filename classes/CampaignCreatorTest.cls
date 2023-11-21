@@ -7,9 +7,9 @@ public class CampaignCreatorTest {
         Date startDate = Date.today();
         Date endDate = startDate.addDays(30);
 
-        Test.startTest();
+        System.runAs(new User(Id = UserInfo.getUserId())) {
         CampaignCreator.createCampaign(campaignName, startDate, endDate);
-        Test.stopTest();
+        }
 
         // Retrieve the created Campaign
         Campaign createdCampaign = [SELECT Id, Name, StartDate, EndDate FROM Campaign WHERE Name = :campaignName LIMIT 1];
