@@ -1,7 +1,7 @@
 /**
  * @description The AccountUpdater class provides a method to update the Industry field of an Account.
  */
-public class AccountUpdater {
+public without sharing class AccountUpdater {
     /**
      * @description Updates the Industry field of an Account.
      * 
@@ -15,7 +15,7 @@ public class AccountUpdater {
         // Update the Industry field
         accToUpdate.Industry = newIndustry;
 
-        if(Schema.sObjectType.Account.isCreateable()) {
+        if(Schema.sObjectType.Account.isUpdateable()) {
         // Save the updated record
         update accToUpdate;
         }
