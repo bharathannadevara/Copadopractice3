@@ -456,6 +456,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Test_PR1__c</fullName>
+        <externalId>false</externalId>
+        <label>Test PR1</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Test_PR__c</fullName>
         <externalId>false</externalId>
         <label>Test PR</label>
